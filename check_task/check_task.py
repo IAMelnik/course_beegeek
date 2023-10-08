@@ -1,8 +1,10 @@
-# Функция для выполнения тестов задач на курсе https://stepik.org/course/82541/ - "Поколение Python": курс для профессионалов
+# Функция для выполнения тестов задач на курсе 
+# https://stepik.org/course/82541/ - "Поколение Python": курс для профессионалов
 # Предварительно необходимо получить личный токен на github для подключения к репозиторию Beegeek
 # Для получение токена нужно иметь учетную запись Github, переходим в Settings,
 # слева последняя строка Developer settings -> Personal access tokens -> Fine-grained tokens
-# Подробнее - https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+# Подробнее - 
+# https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
 # Функции на вход подается 3 параметра ваш токен, номер модуля и номер задачи, 
 
 from github import Github
@@ -70,7 +72,8 @@ def check_bg(github_token, module, task):
 
 # Пример запуска
 # 1. Сначала решаем поставленную задачу, создаем и записываем функцию. 
-# ВНИМАНИЕ! Код будет исполняться корректно, только если все условия по наименованию функции будет исполняться
+# ВНИМАНИЕ! Код будет исполняться корректно, 
+# только если все условия по наименованию функции будет исполняться
 def spell(*args):
     result = {}
     for word in args:
@@ -79,5 +82,6 @@ def spell(*args):
     return result
 # 2. Вызываем функцию для проверки решения. 
 check_bg(github_token, module, task)
-# Можем далее использовать конструкцию вида ниже, остается создать функцию из задания 14 строкой выше
+# Можем далее использовать конструкцию вида ниже, остается создать 
+# функцию из задания 14 строкой выше
 check_bg(github_token, module, task=14)
